@@ -1,0 +1,244 @@
+body {
+	background-color: #F5F5F5;
+}
+
+li {
+	margin: 10px; 
+	padding: 10px;
+}
+
+h3 {
+	margin-left: 10px;
+	margin-top: 1px;
+}
+
+h4 {
+	margin-left: 10px;
+}
+
+#AddSurveyButton {
+	margin-left: 40px;
+}
+
+#stickyheader {
+	background: #eee; 
+	border-left: 1px solid #cfcfcf;
+	border-bottom: solid #cfcfcf;
+	border-width: thin ;
+	height:60px; 
+	left: 0; 
+	position: fixed; 
+	width: 100%; 
+	top: 0; 
+}
+
+#headercontent {
+	line-height:60px; 
+	margin:0 auto; 
+	width:940px; 
+	text-align: left;
+	margin-left: 120px; 
+}
+
+#HotelInfo {
+	width: 89%; 
+	height: 45%;
+	border-style: solid;
+	border-color: #fff;
+	margin: 20px;
+	border-width: thin;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 4px;
+}
+
+#HotelInfoContent {
+	margin-left: 10px;
+}
+
+#Surveys {
+	width: 89%; 	
+	height: 35%;
+	border-style: solid;
+	border-color: #fff;
+	margin: 20px;
+	border-width: thin;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 4px;
+}
+
+#Questions {
+	width: 89%; 
+	height: 85%;
+	border-style: solid;
+	border-color: #fff;
+	margin: 20px;
+	border-width: thin;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px;
+	border-radius: 4px;
+
+}
+
+#AddQuestion {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.container {
+	margin-top: 5%;
+	margin-left: 8%; 
+	margin-right: 10%;
+	overflow: auto; 
+	display: block;
+	width: 90%;
+}
+
+#Nav-Main {
+	background-color: #1f3c5f;
+	width: 80px;
+	height: 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	left: 0;
+	margin: 0;
+	padding: 0 0 0px 0;
+	min-height: 500px;
+	float: left;
+	font-color: white;
+}
+
+.EditorHeading {
+	border-radius: 10px 10px 0 0;
+	background: #eee;
+	padding: 10px 0 10px 18px;
+	margin: 0 30px 0 30px;
+	height: 15px;
+}
+
+.Name {
+	font-weight: bold;
+}
+
+.Type {
+	font-weight: bold;
+	float: right;
+	margin-right: 200px;
+}
+
+.Actions {
+	font-weight: bold;
+	float: right;
+	margin-right: -180px;
+}
+
+.Channel {
+	margin: 0 30px 0 30px;
+	padding: 10px 0 15px 18px;
+	border-bottom: solid;
+	border-left: solid;
+	border-right: solid;
+	border-color: #eee;
+	border-width: 1px;
+}
+
+.EditorContainer {
+	margin: 0 30px 0 30px;
+	border-bottom: solid;
+	border-left: solid;
+	border-right: solid;
+	border-color: #eee;
+	border-width: 1px;
+
+}
+
+.SurveyName {
+	font-style: italic;
+}
+
+.SurveyType {
+	font-style: italic;
+	float: right;
+	margin-right: 185px;
+}
+
+.SurveyAction {
+	float: right;
+	margin-right: -215px;
+}
+
+.EditorChannel {
+	margin: 0 40px 0 40px;
+	padding: 10px 0 15px 18px;
+}
+
+.QuestionName {
+	font-style: italic;
+	margin-left: 20px;
+}
+
+.QuestionType {
+	font-style: italic;
+	float: right;
+	margin-right: 200px;
+}
+
+.QuestionType-CB {
+	font-style: italic;
+	float: right;
+	margin-right: 180px;
+}
+
+.QuestionType-NPS {
+	float: right;
+	margin-right: 210px;
+}
+
+.QuestionAction {
+	float: right;
+	margin-right: -170px;
+}
+
+.TranslateAction {
+	float: right;
+	margin-right: -190px;
+}
+
+.addPosition {
+	position: relative;
+}
+
+#Nav-Main ul li {
+	background-color: #1f3c5f;
+	margin: 0;
+	padding-left: 100px;
+	list-style-type: none;
+	color: white;
+	border-bottom-color: black;
+}
+
+.MenuHeader {
+	font-size: 20px;
+	border-bottom-color: black;
+}
+
+.SpanishSurveyBody { 
+	display: none;
+}
+
+#SpanishSurvey:hover {
+	cursor: hand;
+    text-decoration: underline;
+}
+
+#EnglishSurvey:hover {
+	cursor: hand;
+    text-decoration: underline;
+}
+
+
+
+

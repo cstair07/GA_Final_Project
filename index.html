@@ -1,0 +1,240 @@
+<doctype! html>
+     <head>
+    <!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Mine -->
+     	<link rel = "stylesheet" type = "text/css" href = "css/main.css">
+     	<meta name="title" content="Revinate :: Survey Editor">
+     	<title>Revinate Survey Editor</title>
+     </head>
+<html>
+     <body>
+     	<div id="stickyheader">
+     		<div id="headercontent">
+     			<p>CStair Prototype<p>
+     		</div>
+
+     		<!-- Navigation -->
+     	</div>
+	     	<ul id ="Nav-Main">
+	     		<li><img src="images/icon_47066.png"></li>
+	     		<li><img src="images/icon_64003.png">
+	     			<ul class="listTab">
+	     				 <li class="MenuHeader">Dashboard</li>
+	     				 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     			</ul>
+	     		</li>
+	     		<li><img src="images/icon_64770.png">
+	     			<ul class="listTab">
+						 <li class="MenuHeader">Reviews</li>
+	     				 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     			</ul>
+	     		</li>
+	     		<li><img src="images/icon_64569.png">
+	     			<ul class="listTab">
+	     				 <li class="MenuHeader">Reports</li>
+						 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     				 <li>These are menu links</li>
+	     			</ul>
+	     		</li>
+	     		<li><img src="images/icon_429.png">
+	     			<ul class="listTab">
+	     				<li class="MenuHeader">Surveys</li>
+	     				<li>These are menu links</li>
+	     				<li>These are menu links</li>
+	     				<li>These are menu links</li>
+	     			</ul>
+	     		</li>
+	     	</ul>
+		     	<div class ="container">
+		     		<h1>Edit Survey</h1>
+		     			<div id="HotelInfo">
+		     				<div id="HotelInfoContent">
+			     				<h3>Hotel Information</h2>
+			     					<textarea id="TextInput" rows="6" cols="50"></textarea>
+			     					<button id="SaveButton">Save</button>
+			     					<br></br>
+			     						<p> This is your Hotel Name and Address that will be included on your survey</p>
+			     					<p id="InfoContainer"></p>
+		     				</div>
+		     			</div> 
+		     			<div id="Surveys">
+		     				<!-- Survey Channels -->
+		     				<h3>Surveys</h3>
+		     					<div class="EditorHeading">
+		     						<span class="Name">Name</span>
+		     						<span class="Type">Type</span>
+		     						<span class="Actions">Actions</span>
+		     					</div>
+		     					<div class="Channel">
+		     						<span class="SurveyName">My Survey</span>
+		     						<span class="SurveyType">Post-Stay</span>
+		     						<span class="SurveyAction">
+		     							<span id="EnglishSurvey" href="">Edit</span> | 
+		     							<span>Preview</span>
+		     						</span>
+		     					</div>
+		     					<div class="Channel">
+		     						<span class="SurveyName">My Spanish Survey</span>
+		     						<span class="SurveyType">Language</span>
+		     						<span class="SurveyAction">
+		     							<span id='SpanishSurvey'href="">Edit</span> | 
+		     							<span>Preview</span>
+		     						</span>
+		     					</div>
+		     					<br></br>
+								<!-- Button trigger modal -->
+		     					<button id="AddSurveyButton" data-toggle="modal" data-target="#myModal">Add Survey</button>
+		     					<!-- Modal -->
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  									<div class="modal-dialog">
+   										<div class="modal-content">
+      										<div class="modal-header">
+        										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        											<h4 class="modal-title" id="myModalLabel">Add a Survey</h4>
+     										 </div>
+      										<div class="modal-body">This would be a modal where you can add a survey.
+      										</div>
+      										<div class="modal-footer">
+										        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-primary">Save changes</button>
+										    </div>
+								    	</div>
+								  	</div>
+								</div>
+							</div>
+		     			<div id ="Questions">
+		     				<!-- Active Survey Template Area  -->
+		     				<h3>Questions</h3>
+		     					<h4>Your Active Questions</h4>
+				     				<div id='EnglishSurveyBody'>
+			     						<div class="EditorHeading">
+			     							<span class="Name">Name</span>
+			     							<span class="Type">Type</span>
+			     							<span class="Actions">Actions</span>
+			     						</div>
+			     						<div class="EditorContainer">
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Overall Rating</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Review Title</span>
+			     								<span class="QuestionType-CB"> Comment</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Review Body</span>
+			     								<span class="QuestionType-CB"> Comment</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a> </span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Service</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Value</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Location</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Cleanliness</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Food and Beverage</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Sleep Quality</span>
+			     								<span class="QuestionType"> Rating</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     							<div class="EditorChannel"></div>
+			     								<span class="QuestionName">Net Promoter Score</span>
+			     								<span class="QuestionType-NPS"> NPS</span>
+			     								<span class="QuestionAction"><a href="#Edit">Edit</a></span>
+			     						</div>
+				     				</div>
+									<div class="SpanishSurveyBody">
+										<div class="EditorHeading">
+											<span class="Name">Name</span>
+											<span class="Type">Type</span>
+											<span class="Actions">Actions</span>
+										</div>
+										<div class="EditorContainer">
+											<div class="EditorChannel"></div>
+												<span class="QuestionName"> Clasification global</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Titulo opinon</span>
+												<span class="QuestionType-CB"> Comment</span>
+												<span class="TranslateAction"><a href="#">Translate</a> </span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Opinion</span>
+												<span class="QuestionType-CB"> Comment</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Servicio</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Valor</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Limpieza</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Habataciones</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Belo</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Calida de descanso</span>
+												<span class="QuestionType"> Rating</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>
+											<div class="EditorChannel"></div>
+												<span class="QuestionName">Net Promoter Score</span>
+												<span class="QuestionType-NPS"> NPS</span>
+												<span class="TranslateAction"><a href="#">Translate</a></span>		
+					     				</div>
+				     				</div>
+		     					<!-- Launch Modal Button -->
+		     					<button id="AddQuestion" data-toggle="modal" data-target="#myModal1">Add Question</button>
+								<!-- Modal -->
+								<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="myModalLabel">Add Question</h4>
+											</div>
+											<div class="modal-body">This is a modal you can use to add questions.
+											</div>
+											<div class="modal-footer">
+										        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										        <button type="button" class="btn btn-primary">Save changes</button>
+										    </div>
+										</div>
+									</div>
+								</div>
+		     			</div>
+		     	<!-- BootStrap -->
+		     	<script src="http://code.jquery.com/jquery.js"></script>
+	    		<script src="js/bootstrap.min.js"></script>
+	    		<!-- Mine -->
+		     	<script src= "js/main.js"></script>
+     		</div>
+     </body>
+</html>
